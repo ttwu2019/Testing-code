@@ -5,13 +5,19 @@
  * 不可用indexOf()
  */
 function test(num, list) {
-    for (let i = 0; i < list[0].length; i++) {
-        if (num == list[0][i]) {
-            return i;
-        }
-        continue;
+  for (let i = 0; i < list[0].length; i++) {
+    if (num == list[0][i]) {
+      return i;
     }
-    return -1;
+  }
+  return -1;
 }
 
-console.log(test(1, [[2, 3, 4, 5, 1]]));
+console.log(test(0, [[2, 3, 4, 5, 1]]));
+
+/**
+ * [[1,2,3],[4,5,6]]
+ * 第几个列表的第几个index
+ */
+
+console.log([[1, 2, 3]][0].indexOf(1));

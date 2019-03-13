@@ -6,20 +6,18 @@
  */
 
 function test(num) {
-    let i = 1;
-    let str = '';
-    while (i <= num) {
-        let j = 1;
-        while (j <= i) {
-            str += j + '*' + i + '=' + (i * j) + ' ';
-            if (i === j) {
-                str += "\n";
-            }
-            j++;
-        }
-        i++;
+  let i = 1;
+  let str = "";
+  while (i <= num) {
+    let j = 1;
+    while (j <= i) {
+      str += j + "*" + i + "=" + i * j + "\t";
+      j++;
     }
-    console.log(str);
+    str += "\n";
+    i++;
+  }
+  console.log(str);
 }
 
 test(9);

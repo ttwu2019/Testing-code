@@ -2,19 +2,16 @@
  * 定义一个方法，传入一个字符串‘abbcccdddd’
  * 打印出每个字母的个数，以obj的格式
  */
-
-function test(str) {
-    let obj = {}, num;
-    for (let i = 0; i < str.length; i++) {
-        if (obj[str[i]]) {
-            num = num + 1;
-            obj[str[i]] = num;
-        } else {
-            num = 1;
-            obj[str[i]] = num;
-        }
+function test1(str) {
+  let obj = {};
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] in obj) {
+      obj[str[i]]++;
+    } else {
+      obj[str[i]] = 1;
     }
-    console.log(obj);
+  }
+  console.log(obj);
 }
 
-test('abbcccdddd')
+test1("abbcccdddd");
