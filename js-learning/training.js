@@ -1,3 +1,7 @@
+/**
+ * Image.png
+ */
+
 var db = {};
 
 function pageLogin(username, password) {
