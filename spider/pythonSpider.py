@@ -11,5 +11,5 @@ a = html.find_all('a')
 b = {}
 
 for link in a:
-    b[link.get_text()] = link.get('href')
+    b[link.get_text()] = link.get('href')  #以字典的形式
 print(b)
